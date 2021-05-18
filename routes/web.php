@@ -62,8 +62,17 @@ Route::get('/', function () {
             "moneda" => "Guaraní",
             "población" => 7
 
+        ],
+        "Brasil"=>[
+            "capital" => "Brasilia",
+            "moneda" => "Real brasileño",
+            "población" => 211
         ]
     ];
+
+    // mostrar la vista de paises
+    //enviar vista paises
+    return view('paises')-> with("paises", $paises);
 /*
     echo "<pre>";
     print_r($paises["Paraguay"]["moneda"]);
@@ -71,11 +80,11 @@ Route::get('/', function () {
 */
 
 // Recorrer arreglo
-      foreach($paises as $indice => $valor){
+      /*foreach($paises as $indice => $valor){
        echo "<h1> $indice <h1/>";
         echo "<pre>";
         print_r($valor["capital"]);
         echo "</pre>";
         echo "<hr/>";
-      }
+      }*/
  });
