@@ -73,18 +73,11 @@ Route::get('/', function () {
     // mostrar la vista de paises
     //enviar vista paises
     return view('paises')-> with("paises", $paises);
-/*
-    echo "<pre>";
-    print_r($paises["Paraguay"]["moneda"]);
-    echo "</pre>";
-*/
+}
 
-// Recorrer arreglo
-      /*foreach($paises as $indice => $valor){
-       echo "<h1> $indice <h1/>";
-        echo "<pre>";
-        print_r($valor["capital"]);
-        echo "</pre>";
-        echo "<hr/>";
-      }*/
- });
+
+ );
+
+Route::get('mostrar_formulario' , 'MetabucadorController@mostrar_formulario');
+
+Route::post('buscar_termino', 'MetabucadorController@buscar_termino');

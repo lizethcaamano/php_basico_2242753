@@ -13,7 +13,7 @@
 
     <table class="table table-dark table-sstriped table-success">
         <thead>
-            <tr class="text-warning">
+            <tr class="text-warningphp artisan">
                 <th>Nombre</th>
                 <th>Capital</th>
                 <th>Moneda</th>
